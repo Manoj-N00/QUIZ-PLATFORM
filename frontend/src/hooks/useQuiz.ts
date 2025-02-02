@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Question, QuizState } from '../types/quiz';
 
-const API_URL = 'http://localhost:3001/api/questions';
+const API_URL = 'https://quiz-platform-5h83.onrender.com';
 
 const initialQuizState: QuizState = {
   currentQuestionIndex: 0,
