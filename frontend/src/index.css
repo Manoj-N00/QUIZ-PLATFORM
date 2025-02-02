@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-gray-900 text-gray-100;
+}
+
+.quiz-gradient {
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+}
+
+.answer-button {
+  @apply relative overflow-hidden transition-all duration-300 
+         hover:scale-[1.02] active:scale-[0.98];
+}
+
+.answer-button::before {
+  content: '';
+  @apply absolute inset-0 bg-gradient-to-r from-violet-600 to-fuchsia-600 
+         opacity-0 transition-opacity duration-300;
+}
+
+.answer-button:hover::before {
+  @apply opacity-10;
+}
+
+.glass-card {
+  @apply bg-gray-800/80 backdrop-blur-lg border border-gray-700/50;
+}
